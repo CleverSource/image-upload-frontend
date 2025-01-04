@@ -81,7 +81,7 @@ export function Dashboard() {
   }
 
   const handleCopyLink = (id: string, name: string) => {
-    navigator.clipboard.writeText(`${process.env.IMAGE_HOST as string}/${id}/${stripUserId(name)}`)
+    navigator.clipboard.writeText(`${process.env.NEXT_PUBLIC_IMAGE_HOST as string}/${id}/${stripUserId(name)}`)
     toast({
       title: "Link copied",
       description: "The image link has been copied to your clipboard."
